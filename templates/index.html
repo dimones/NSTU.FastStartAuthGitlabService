@@ -106,7 +106,7 @@
             </div>
           </div>
           <div class="modal-footer">
-            <button type="button" class="btn btn-primary" id="goGit">Перейти на GitLab</button>
+            <button type="button" class="btn btn-primary" id="btnAuthAdmin">Авторизоваться</button>
           </div>
         </div>
       </div>
@@ -166,7 +166,23 @@
 
         });
         $("#goGit").on('click', function () {
-           window.location.href = 'http://192.168.0.79/' + username;
+           window.location.href = document.location.origin + '/' +  + username;
+        });
+        $("#btnAuthAdmin").on('click', function () {
+            $.post('/api/auth_admin',data= {'username': $('#adminUsername').val(), 'password': $("#adminPassword").val()})
+            .done(function (data) {
+                data = JSON.parse(data);
+                if(data.succeed == true)
+                {
+                    Cookies.set('token', data.token);
+                    window.location.href = document.location.origin + '/admin';
+                }
+                else
+                    toastr.error('Ошибка авторизации');
+            })
+            .fail(function () {
+
+            });
         });
 
     </script>

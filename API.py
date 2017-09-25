@@ -3,10 +3,10 @@ import requests,sys,uuid,pymysql
 server_address = "http://192.168.0.79/api/v4/"
 class DB:
     def get_mysql_connection(self):
-        return pymysql.connect(host='217.71.129.181',
+        return pymysql.connect(host='192.168.0.79',
                         user='mynstu',
                         password='jmXQF97J%',
-                        port=3307,
+                        port=3306,
                         db='FastStart',
                         charset='utf8',
                         cursorclass=pymysql.cursors.DictCursor)
@@ -41,7 +41,7 @@ class DB:
         try:
             with connection.cursor() as cursor:
                 cursor.execute(sql)
-                return cursor.fetchall()
+                return list(cursor.fetchall())
         except Exception as e:
             print(e)
         finally:
@@ -102,9 +102,10 @@ class Gitlab:
                                 "website_url": vk_link},
                           headers={"PRIVATE-TOKEN": self.root_gitlab_token})
         print(r.status_code)
-        if r.status_code == 200:
+        if r.status_code == 201:
             DB().insertInDB("INSERT INTO users(username,name) VALUES('%s','%s') " % (auth_data['username'], auth_data['name']))
             ll = self.list_lab()
+            print(ll)
             if len(ll) > 0:
                 for l in ll:
                     self.create_user_project(r.json()['id'], l['name'],l['description'])
@@ -123,6 +124,7 @@ class Gitlab:
         for p in self.get_user_projects(user_id):
             if p['name'] == name:
                 return None
+        print('create_user_project')
         r = requests.post(server_address  + 'projects/user/%s' % user_id,
                           data={"name": name, 'description': description},
                           headers={"PRIVATE-TOKEN": self.root_gitlab_token})
@@ -142,13 +144,14 @@ class Gitlab:
             return {"succeed": True}
     def log_to_db(self,message):
         print(message)
-        DB().insertInDB("INSERT INTO LOGS(message) VALUES('%s')" % message)
+        DB().insertInDB("INSERT INTO logs(message) VALUES('%s')" % message)
     def get_last_logs(self):
-        DB().selectInDB("SELECT * FROM LOGS ORDER BY ID DESC LIMIT 0,15")
+        return DB().selectInDB("SELECT * FROM logs ORDER BY ID DESC LIMIT 0,15")
     def list_lab(self):
         return DB().selectInDB("SELECT * FROM labs")
     def admin_auth(self,username,password):
-        admin = DB().selectInDB("SELECT FROM admins WHERE username = '%s' AND password = '%s'" % (username, password))
+        admin = DB().selectInDB("SELECT * FROM admins WHERE username = '%s' AND password = '%s'" % (username, password))
+
         if len(admin) > 0:
             DB().insertInDB("DELETE FROM tokens WHERE admin_id = %s" % admin[0]['id'])
             token = DB().getNewToken()
