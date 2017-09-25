@@ -1,7 +1,8 @@
 import requests
+server_address = "http://192.168.0.79/api/v4/"
 def auth_gitlab(username,password):
     #curl --request POST "http://10.211.55.4/api/v4/session?login=root&password=jmXQF97J"
-    r = requests.post("http://10.211.55.4/api/v4/session?login=%s&password=%s"% (username,password))
+    r = requests.post(server_address + "session?login=%s&password=%s"% (username,password))
     if r.status_code == 201:
         return r.json()['private_token']
     else:
@@ -37,24 +38,24 @@ def auth_nstu(username, password):
         return None
 
 def get_users(token):
-    r = requests.get('http://10.211.55.4/api/v4/users',headers = {"PRIVATE-TOKEN": token})
+    r = requests.get(server_address + 'users',headers = {"PRIVATE-TOKEN": token})
     return r.json()
 def create_user(auth_data, vk_link, token):
-    r = requests.post('http://10.211.55.4/api/v4/users',
+    r = requests.post(server_address + 'users',
                       data= {"email": auth_data['username'], "password": auth_data['password'],
                              "username": auth_data['username'].split('@')[0], "name": auth_data['name'], "website_url": vk_link},
                       headers = {"PRIVATE-TOKEN": token})
     return r.json()
 
 def get_user_projects(user_id,token):
-    r = requests.get('http://10.211.55.4/api/v4/users/%s/projects' % user_id, headers={"PRIVATE-TOKEN": token})
+    r = requests.get(server_address + 'users/%s/projects' % user_id, headers={"PRIVATE-TOKEN": token})
     return r.json()
 
 def create_user_project(user_id, name, description, token):
     for p in get_user_projects(user_id,token):
         if p['name'] == name:
             return None
-    r = requests.post('http://10.211.55.4/api/v4/projects/user/%s' % user_id,
+    r = requests.post(server_address + 'projects/user/%s' % user_id,
                       data={"name": name, 'description': description },
                       headers={"PRIVATE-TOKEN": token})
     return r.json()
