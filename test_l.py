@@ -3,14 +3,6 @@ from API import *
 import json,pymysql
 app = Flask(__name__)
 
-root_gitlab_token = auth_gitlab('root', 'jmXQF97J')
-def get_mysql_connection():
-    return pymysql.connect(host="192.168.0.79",
-                    user='mynstu',
-                    password='jmXQF97J%',
-                    db='mynstu',
-                    charset='utf8',
-                    cursorclass=pymysql.cursors.DictCursor)
 @app.route('/')
 def hello_world():
     return render_template('index.html')
@@ -18,7 +10,8 @@ def hello_world():
 
 @app.route('/api/init_user', methods=['POST'])
 def init_user():
-    r = create_user(auth_nstu(request.form['username'],request.form['password']),request.form['vk_link'], root_gitlab_token)
+    g = Gitlab()
+    r = g.create_user(g.auth_nstu(request.form['username'],request.form['password']),request.form['vk_link'])
     print(r)
     if 'message' in r:
         return json.dumps({"succeed": False, 'reason': 'exist'})
@@ -27,8 +20,11 @@ def init_user():
 
 @app.route('/api/auth_admin', methods=['POST'])
 def auth_admin():
-    pass
+    return json.dumps(Gitlab().admin_auth(request.form['username'],request.form['password']))
+
+@app.route('/api/admin/get_labs', methods=['POST'])
+def get_users():
+    if 'token' not in 
 
 if __name__ == '__main__':
-    print(get_mysql_connection())
     app.run(debug=True)
