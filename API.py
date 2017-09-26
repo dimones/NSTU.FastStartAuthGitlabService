@@ -95,6 +95,8 @@ class Gitlab:
             return None
 
     def get_users(self):
+        print('get users')
+        print('token ' + self.root_gitlab_token)
         r = requests.get(server_address  + 'users', headers={"PRIVATE-TOKEN": self.root_gitlab_token})
         return r.json()
 
