@@ -166,7 +166,7 @@
 
         });
         $("#goGit").on('click', function () {
-           window.location.href = document.location.origin + '/' +  + username;
+           window.location.href = 'http://gitlab.mynstu.xyz/;
         });
         $("#btnAuthAdmin").on('click', function () {
             $.post('/api/auth_admin',data= {'username': $('#adminUsername').val(), 'password': $("#adminPassword").val()})
