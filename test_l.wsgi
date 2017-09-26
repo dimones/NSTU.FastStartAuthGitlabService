@@ -1,10 +1,7 @@
 import sys,os,platform
 
 sys.stdout = sys.stderr
-if 'api' not in platform.uname().node:
-    sys.path.insert(0, os.getenv("MYNSTU_LOCATION"))
-else:
-    sys.path.insert(0, '/var/www/NSTU.FastStartAuthGitlabService')
+sys.path.insert(0, '/var/www/NSTU.FastStartAuthGitlabService')
 
 import logging
 logger = logging.getLogger('')
