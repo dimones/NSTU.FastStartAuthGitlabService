@@ -58,8 +58,9 @@ class Gitlab:
         r = requests.post(server_address  + "session?login=%s&password=%s" % (username, password))
         print(r)
         if r.status_code == 201:
-            print('AUTHED' + self.root_gitlab_token)
+            print(r.content)
             self.root_gitlab_token = r.json()['private_token']
+            print('AUTHED' + self.root_gitlab_token)
             return self.root_gitlab_token
         else:
             return None
