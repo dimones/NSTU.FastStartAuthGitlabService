@@ -1,9 +1,9 @@
 import requests,sys,uuid,pymysql
 
-server_address = "http://192.168.0.79/api/v4/"
+server_address = "http://127.0.0.1/api/v4/"
 class DB:
     def get_mysql_connection(self):
-        return pymysql.connect(host='192.168.0.79',
+        return pymysql.connect(host='127.0.0.1',
                         user='mynstu',
                         password='jmXQF97J%',
                         port=3306,
