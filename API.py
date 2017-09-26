@@ -139,6 +139,7 @@ class Gitlab:
             DB().insertInDB("INSERT INTO labs(name,description) VALUES('%s','%s') " % (lab_name,lab_description))
             gu = self.get_users()
             i = 0
+            print(gu)
             for u in gu:
                 print(u)
                 if self.check_project_in_user(u['id'], lab_name) != True:
