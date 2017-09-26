@@ -140,6 +140,7 @@ class Gitlab:
             gu = self.get_users()
             i = 0
             for u in gu:
+                print(u)
                 if self.check_project_in_user(u['id'], lab_name) != True:
                     self.create_user_project(u['id'], lab_name, lab_description)
                 self.log_to_db("%s/%s created lab" % (str(i),str(len(gu))))
