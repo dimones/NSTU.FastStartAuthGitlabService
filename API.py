@@ -97,6 +97,9 @@ class Gitlab:
     def get_users(self):
         print('get users')
         print('token ' + self.root_gitlab_token)
+        while self.root_gitlab_token == None:
+            self.root_gitlab_token = self.auth_gitlab('root','jmXQF97J')
+            print('fucking repeat auth')
         r = requests.get(server_address  + 'users', headers={"PRIVATE-TOKEN": self.root_gitlab_token})
         return r.json()
 
