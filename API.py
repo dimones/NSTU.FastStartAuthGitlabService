@@ -51,7 +51,7 @@ class Gitlab:
     root_gitlab_token = None
     DB = None
     def __init__(self):
-        self.root_gitlab_token = self.auth_gitlab('root', 'jmXQF97J')
+        self.root_gitlab_token = 'R8FyHN5xkyy26zyQ-GR-'#self.auth_gitlab('root', 'jmXQF97J')
         self.DB = DB()
 
     def auth_gitlab(self,username, password):
