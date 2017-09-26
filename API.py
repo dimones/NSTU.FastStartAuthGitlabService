@@ -57,6 +57,7 @@ class Gitlab:
     def auth_gitlab(self,username, password):
         r = requests.post(server_address  + "session?login=%s&password=%s" % (username, password))
         if r.status_code == 201:
+            print('AUTHED' + self.root_gitlab_token)
             self.root_gitlab_token = r.json()['private_token']
             return self.root_gitlab_token
         else:
@@ -166,6 +167,7 @@ class Gitlab:
 
 
 if __name__ == '__main__':
+    print(Gitlab().auth_gitlab('root','jmXQF97J'))
     pass
     # root_gitlab_token = auth_gitlab('root','jmXQF97J')
     # print(create_user_project(2,'Быстрый Старт.Лабораторная 2', 'В этой лабораторной необходимо выполнить ряд действий и тра та та' ,root_gitlab_token))
