@@ -108,7 +108,7 @@ class Gitlab:
         r = requests.post(server_address  + 'users',
                           data={"email": auth_data['username'], "password": auth_data['password'],
                                 "username": auth_data['username'].split('@')[0], "name": auth_data['name'],
-                                "website_url": vk_link},
+                                "website_url": vk_link, 'skip_confirmation': True},
                           headers={"PRIVATE-TOKEN": self.root_gitlab_token})
         print(r.status_code)
         if r.status_code == 201:

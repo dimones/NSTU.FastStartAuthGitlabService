@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7389978c-a8a0-43e6-bec4-a2549fefbaa5" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/index.html" afterPath="$PROJECT_DIR$/templates/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/API.py" afterPath="$PROJECT_DIR$/API.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -19,23 +19,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="API.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="API.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/API.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="429">
-              <caret line="53" column="56" lean-forward="false" selection-start-line="53" selection-start-column="56" selection-end-line="53" selection-end-column="56" />
+            <state relative-caret-position="489">
+              <caret line="110" column="80" lean-forward="true" selection-start-line="110" selection-start-column="80" selection-end-line="110" selection-end-column="80" />
               <folding>
-                <marker date="1506407384000" expanded="true" signature="626:666" ph="SELECT id FR... tokens" />
-                <marker date="1506407384000" expanded="true" signature="4527:4577" ph="INSERT INTO users... " />
-                <marker date="1506407384000" expanded="true" signature="5804:5840" ph="SELECT * FRO... labs" />
-                <marker date="1506407384000" expanded="true" signature="5974:6026" ph="INSERT INTO labs... " />
-                <marker date="1506407384000" expanded="true" signature="6555:6593" ph="INSERT INTO logs... " />
-                <marker date="1506407384000" expanded="true" signature="6667:6713" ph="SELECT * FRO... logs" />
-                <marker date="1506407384000" expanded="true" signature="6772:6790" ph="SELECT * FRO... labs" />
-                <marker date="1506407384000" expanded="true" signature="6870:6932" ph="SELECT * FRO... admins" />
-                <marker date="1506407384000" expanded="true" signature="7015:7051" ph="DELETE FROM " />
-                <marker date="1506407384000" expanded="true" signature="7141:7192" ph="INSERT INTO tokens... " />
-                <marker date="1506407384000" expanded="true" signature="7450:7489" ph="SELECT * FRO... tokens" />
+                <marker date="1506526493000" expanded="true" signature="626:666" ph="SELECT id FR... tokens" />
+                <marker date="1506526493000" expanded="true" signature="4554:4604" ph="INSERT INTO users... " />
+                <marker date="1506526493000" expanded="true" signature="5831:5867" ph="SELECT * FRO... labs" />
+                <marker date="1506526493000" expanded="true" signature="6001:6053" ph="INSERT INTO labs... " />
+                <marker date="1506526493000" expanded="true" signature="6582:6620" ph="INSERT INTO logs... " />
+                <marker date="1506526493000" expanded="true" signature="6694:6740" ph="SELECT * FRO... logs" />
+                <marker date="1506526493000" expanded="true" signature="6799:6817" ph="SELECT * FRO... labs" />
+                <marker date="1506526493000" expanded="true" signature="6897:6959" ph="SELECT * FRO... admins" />
+                <marker date="1506526493000" expanded="true" signature="7042:7078" ph="DELETE FROM " />
+                <marker date="1506526493000" expanded="true" signature="7168:7219" ph="INSERT INTO tokens... " />
+                <marker date="1506526493000" expanded="true" signature="7477:7516" ph="SELECT * FRO... tokens" />
               </folding>
             </state>
           </provider>
@@ -71,7 +71,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/index.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="186">
@@ -123,8 +123,8 @@
         <option value="$PROJECT_DIR$/templates/admin_index.html" />
         <option value="$PROJECT_DIR$/test_l.py" />
         <option value="$PROJECT_DIR$/test_l.wsgi" />
-        <option value="$PROJECT_DIR$/API.py" />
         <option value="$PROJECT_DIR$/templates/index.html" />
+        <option value="$PROJECT_DIR$/API.py" />
       </list>
     </option>
   </component>
@@ -463,17 +463,17 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1506407384000" expanded="true" signature="626:666" ph="SELECT id FR... tokens" />
-            <marker date="1506407384000" expanded="true" signature="4527:4577" ph="INSERT INTO users... " />
-            <marker date="1506407384000" expanded="true" signature="5804:5840" ph="SELECT * FRO... labs" />
-            <marker date="1506407384000" expanded="true" signature="5974:6026" ph="INSERT INTO labs... " />
-            <marker date="1506407384000" expanded="true" signature="6555:6593" ph="INSERT INTO logs... " />
-            <marker date="1506407384000" expanded="true" signature="6667:6713" ph="SELECT * FRO... logs" />
-            <marker date="1506407384000" expanded="true" signature="6772:6790" ph="SELECT * FRO... labs" />
-            <marker date="1506407384000" expanded="true" signature="6870:6932" ph="SELECT * FRO... admins" />
-            <marker date="1506407384000" expanded="true" signature="7015:7051" ph="DELETE FROM " />
-            <marker date="1506407384000" expanded="true" signature="7141:7192" ph="INSERT INTO tokens... " />
-            <marker date="1506407384000" expanded="true" signature="7450:7489" ph="SELECT * FRO... tokens" />
+            <marker date="1506526493000" expanded="true" signature="626:666" ph="SELECT id FR... tokens" />
+            <marker date="1506526493000" expanded="true" signature="4554:4604" ph="INSERT INTO users... " />
+            <marker date="1506526493000" expanded="true" signature="5831:5867" ph="SELECT * FRO... labs" />
+            <marker date="1506526493000" expanded="true" signature="6001:6053" ph="INSERT INTO labs... " />
+            <marker date="1506526493000" expanded="true" signature="6582:6620" ph="INSERT INTO logs... " />
+            <marker date="1506526493000" expanded="true" signature="6694:6740" ph="SELECT * FRO... logs" />
+            <marker date="1506526493000" expanded="true" signature="6799:6817" ph="SELECT * FRO... labs" />
+            <marker date="1506526493000" expanded="true" signature="6897:6959" ph="SELECT * FRO... admins" />
+            <marker date="1506526493000" expanded="true" signature="7042:7078" ph="DELETE FROM " />
+            <marker date="1506526493000" expanded="true" signature="7168:7219" ph="INSERT INTO tokens... " />
+            <marker date="1506526493000" expanded="true" signature="7477:7516" ph="SELECT * FRO... tokens" />
           </folding>
         </state>
       </provider>
@@ -517,17 +517,17 @@
         <state relative-caret-position="2385">
           <caret line="159" column="86" lean-forward="false" selection-start-line="159" selection-start-column="86" selection-end-line="159" selection-end-column="86" />
           <folding>
-            <marker date="1506407384000" expanded="true" signature="626:666" ph="SELECT id FR... tokens" />
-            <marker date="1506407384000" expanded="true" signature="4527:4577" ph="INSERT INTO users... " />
-            <marker date="1506407384000" expanded="true" signature="5804:5840" ph="SELECT * FRO... labs" />
-            <marker date="1506407384000" expanded="true" signature="5974:6026" ph="INSERT INTO labs... " />
-            <marker date="1506407384000" expanded="true" signature="6555:6593" ph="INSERT INTO logs... " />
-            <marker date="1506407384000" expanded="true" signature="6667:6713" ph="SELECT * FRO... logs" />
-            <marker date="1506407384000" expanded="true" signature="6772:6790" ph="SELECT * FRO... labs" />
-            <marker date="1506407384000" expanded="true" signature="6870:6932" ph="SELECT * FRO... admins" />
-            <marker date="1506407384000" expanded="true" signature="7015:7051" ph="DELETE FROM " />
-            <marker date="1506407384000" expanded="true" signature="7141:7192" ph="INSERT INTO tokens... " />
-            <marker date="1506407384000" expanded="true" signature="7450:7489" ph="SELECT * FRO... tokens" />
+            <marker date="1506526493000" expanded="true" signature="626:666" ph="SELECT id FR... tokens" />
+            <marker date="1506526493000" expanded="true" signature="4554:4604" ph="INSERT INTO users... " />
+            <marker date="1506526493000" expanded="true" signature="5831:5867" ph="SELECT * FRO... labs" />
+            <marker date="1506526493000" expanded="true" signature="6001:6053" ph="INSERT INTO labs... " />
+            <marker date="1506526493000" expanded="true" signature="6582:6620" ph="INSERT INTO logs... " />
+            <marker date="1506526493000" expanded="true" signature="6694:6740" ph="SELECT * FRO... logs" />
+            <marker date="1506526493000" expanded="true" signature="6799:6817" ph="SELECT * FRO... labs" />
+            <marker date="1506526493000" expanded="true" signature="6897:6959" ph="SELECT * FRO... admins" />
+            <marker date="1506526493000" expanded="true" signature="7042:7078" ph="DELETE FROM " />
+            <marker date="1506526493000" expanded="true" signature="7168:7219" ph="INSERT INTO tokens... " />
+            <marker date="1506526493000" expanded="true" signature="7477:7516" ph="SELECT * FRO... tokens" />
           </folding>
         </state>
       </provider>
@@ -586,17 +586,17 @@
         <state relative-caret-position="405">
           <caret line="27" column="51" lean-forward="false" selection-start-line="27" selection-start-column="51" selection-end-line="27" selection-end-column="51" />
           <folding>
-            <marker date="1506407384000" expanded="true" signature="626:666" ph="SELECT id FR... tokens" />
-            <marker date="1506407384000" expanded="true" signature="4527:4577" ph="INSERT INTO users... " />
-            <marker date="1506407384000" expanded="true" signature="5804:5840" ph="SELECT * FRO... labs" />
-            <marker date="1506407384000" expanded="true" signature="5974:6026" ph="INSERT INTO labs... " />
-            <marker date="1506407384000" expanded="true" signature="6555:6593" ph="INSERT INTO logs... " />
-            <marker date="1506407384000" expanded="true" signature="6667:6713" ph="SELECT * FRO... logs" />
-            <marker date="1506407384000" expanded="true" signature="6772:6790" ph="SELECT * FRO... labs" />
-            <marker date="1506407384000" expanded="true" signature="6870:6932" ph="SELECT * FRO... admins" />
-            <marker date="1506407384000" expanded="true" signature="7015:7051" ph="DELETE FROM " />
-            <marker date="1506407384000" expanded="true" signature="7141:7192" ph="INSERT INTO tokens... " />
-            <marker date="1506407384000" expanded="true" signature="7450:7489" ph="SELECT * FRO... tokens" />
+            <marker date="1506526493000" expanded="true" signature="626:666" ph="SELECT id FR... tokens" />
+            <marker date="1506526493000" expanded="true" signature="4554:4604" ph="INSERT INTO users... " />
+            <marker date="1506526493000" expanded="true" signature="5831:5867" ph="SELECT * FRO... labs" />
+            <marker date="1506526493000" expanded="true" signature="6001:6053" ph="INSERT INTO labs... " />
+            <marker date="1506526493000" expanded="true" signature="6582:6620" ph="INSERT INTO logs... " />
+            <marker date="1506526493000" expanded="true" signature="6694:6740" ph="SELECT * FRO... logs" />
+            <marker date="1506526493000" expanded="true" signature="6799:6817" ph="SELECT * FRO... labs" />
+            <marker date="1506526493000" expanded="true" signature="6897:6959" ph="SELECT * FRO... admins" />
+            <marker date="1506526493000" expanded="true" signature="7042:7078" ph="DELETE FROM " />
+            <marker date="1506526493000" expanded="true" signature="7168:7219" ph="INSERT INTO tokens... " />
+            <marker date="1506526493000" expanded="true" signature="7477:7516" ph="SELECT * FRO... tokens" />
           </folding>
         </state>
       </provider>
@@ -655,17 +655,17 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1506407384000" expanded="true" signature="626:666" ph="SELECT id FR... tokens" />
-            <marker date="1506407384000" expanded="true" signature="4527:4577" ph="INSERT INTO users... " />
-            <marker date="1506407384000" expanded="true" signature="5804:5840" ph="SELECT * FRO... labs" />
-            <marker date="1506407384000" expanded="true" signature="5974:6026" ph="INSERT INTO labs... " />
-            <marker date="1506407384000" expanded="true" signature="6555:6593" ph="INSERT INTO logs... " />
-            <marker date="1506407384000" expanded="true" signature="6667:6713" ph="SELECT * FRO... logs" />
-            <marker date="1506407384000" expanded="true" signature="6772:6790" ph="SELECT * FRO... labs" />
-            <marker date="1506407384000" expanded="true" signature="6870:6932" ph="SELECT * FRO... admins" />
-            <marker date="1506407384000" expanded="true" signature="7015:7051" ph="DELETE FROM " />
-            <marker date="1506407384000" expanded="true" signature="7141:7192" ph="INSERT INTO tokens... " />
-            <marker date="1506407384000" expanded="true" signature="7450:7489" ph="SELECT * FRO... tokens" />
+            <marker date="1506526493000" expanded="true" signature="626:666" ph="SELECT id FR... tokens" />
+            <marker date="1506526493000" expanded="true" signature="4554:4604" ph="INSERT INTO users... " />
+            <marker date="1506526493000" expanded="true" signature="5831:5867" ph="SELECT * FRO... labs" />
+            <marker date="1506526493000" expanded="true" signature="6001:6053" ph="INSERT INTO labs... " />
+            <marker date="1506526493000" expanded="true" signature="6582:6620" ph="INSERT INTO logs... " />
+            <marker date="1506526493000" expanded="true" signature="6694:6740" ph="SELECT * FRO... logs" />
+            <marker date="1506526493000" expanded="true" signature="6799:6817" ph="SELECT * FRO... labs" />
+            <marker date="1506526493000" expanded="true" signature="6897:6959" ph="SELECT * FRO... admins" />
+            <marker date="1506526493000" expanded="true" signature="7042:7078" ph="DELETE FROM " />
+            <marker date="1506526493000" expanded="true" signature="7168:7219" ph="INSERT INTO tokens... " />
+            <marker date="1506526493000" expanded="true" signature="7477:7516" ph="SELECT * FRO... tokens" />
           </folding>
         </state>
       </provider>
@@ -776,26 +776,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/API.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="429">
-          <caret line="53" column="56" lean-forward="false" selection-start-line="53" selection-start-column="56" selection-end-line="53" selection-end-column="56" />
-          <folding>
-            <marker date="1506407384000" expanded="true" signature="626:666" ph="SELECT id FR... tokens" />
-            <marker date="1506407384000" expanded="true" signature="4527:4577" ph="INSERT INTO users... " />
-            <marker date="1506407384000" expanded="true" signature="5804:5840" ph="SELECT * FRO... labs" />
-            <marker date="1506407384000" expanded="true" signature="5974:6026" ph="INSERT INTO labs... " />
-            <marker date="1506407384000" expanded="true" signature="6555:6593" ph="INSERT INTO logs... " />
-            <marker date="1506407384000" expanded="true" signature="6667:6713" ph="SELECT * FRO... logs" />
-            <marker date="1506407384000" expanded="true" signature="6772:6790" ph="SELECT * FRO... labs" />
-            <marker date="1506407384000" expanded="true" signature="6870:6932" ph="SELECT * FRO... admins" />
-            <marker date="1506407384000" expanded="true" signature="7015:7051" ph="DELETE FROM " />
-            <marker date="1506407384000" expanded="true" signature="7141:7192" ph="INSERT INTO tokens... " />
-            <marker date="1506407384000" expanded="true" signature="7450:7489" ph="SELECT * FRO... tokens" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/admin_index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1461">
@@ -809,6 +789,26 @@
         <state relative-caret-position="186">
           <caret line="77" column="108" lean-forward="false" selection-start-line="77" selection-start-column="108" selection-end-line="77" selection-end-column="108" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/API.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="489">
+          <caret line="110" column="80" lean-forward="true" selection-start-line="110" selection-start-column="80" selection-end-line="110" selection-end-column="80" />
+          <folding>
+            <marker date="1506526493000" expanded="true" signature="626:666" ph="SELECT id FR... tokens" />
+            <marker date="1506526493000" expanded="true" signature="4554:4604" ph="INSERT INTO users... " />
+            <marker date="1506526493000" expanded="true" signature="5831:5867" ph="SELECT * FRO... labs" />
+            <marker date="1506526493000" expanded="true" signature="6001:6053" ph="INSERT INTO labs... " />
+            <marker date="1506526493000" expanded="true" signature="6582:6620" ph="INSERT INTO logs... " />
+            <marker date="1506526493000" expanded="true" signature="6694:6740" ph="SELECT * FRO... logs" />
+            <marker date="1506526493000" expanded="true" signature="6799:6817" ph="SELECT * FRO... labs" />
+            <marker date="1506526493000" expanded="true" signature="6897:6959" ph="SELECT * FRO... admins" />
+            <marker date="1506526493000" expanded="true" signature="7042:7078" ph="DELETE FROM " />
+            <marker date="1506526493000" expanded="true" signature="7168:7219" ph="INSERT INTO tokens... " />
+            <marker date="1506526493000" expanded="true" signature="7477:7516" ph="SELECT * FRO... tokens" />
+          </folding>
         </state>
       </provider>
     </entry>
